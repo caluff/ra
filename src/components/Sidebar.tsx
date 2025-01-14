@@ -12,6 +12,7 @@ import {Badge} from "./Badge";
 import {AnimatePresence, motion} from "framer-motion";
 import {IconLayoutSidebarRightCollapse} from "@tabler/icons-react";
 import {isMobile} from "@/lib/utils";
+import profile from '../../public/profile.png'
 
 export const Sidebar = () => {
   const [open, setOpen] = useState(!isMobile());
@@ -81,9 +82,9 @@ export const Navigation = ({
       <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2">
         Socials
       </Heading>
-      {socials.map((link: Navlink) => (
+      {socials.map((link: Navlink, i: number) => (
         <Link
-          key={link.href}
+          key={i}
           href={link.href}
           className={twMerge(
             "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
@@ -106,15 +107,15 @@ const SidebarHeader = () => {
   return (
     <div className="flex space-x-2">
       <Image
-        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80"
+        src={profile}
         alt="Avatar"
         height="40"
         width="40"
         className="object-cover object-top rounded-full flex-shrink-0"
       />
       <div className="flex text-sm flex-col">
-        <p className="font-bold text-primary">John Doe</p>
-        <p className="font-light text-secondary">Developer</p>
+        <p className="font-bold text-primary">Daniel Chaviano</p>
+        <p className="font-light text-secondary">Photographer</p>
       </div>
     </div>
   );

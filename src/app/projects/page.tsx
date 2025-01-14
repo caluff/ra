@@ -4,7 +4,7 @@ import {Products} from "@/components/Products";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | John Doe",
+  title: "Projects | RA",
   description:
     "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
 };
