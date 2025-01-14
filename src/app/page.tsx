@@ -12,7 +12,7 @@ export default function Home() {
       <Paragraph className="max-w-xl mt-4">
         I capture the beauty of life through photography. Specializing in [specific
         photography genre], I tell stories with every shot. Whether it's a candid smile or a breathtaking landscape, my
-        goal is to create images that inspire. Thank you for visiting my portfolio. Let's create something amazing
+        goal is to create images that inspire. Thank you for visiting my portfolio. Let&apos;s create something amazing
         together.
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
